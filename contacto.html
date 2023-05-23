@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="sweetalert2.all.min.js"></script>
+    <!--link Swiper CSS-->
+    <link rel="stylesheet" href="swiper-bundle.min.css">
+    <link rel="stylesheet" href="styleContacto.css">
+    <!-- Fav icon-->
+    <link rel="shortcut icon" href="Movies Website Images And Video/img/fav-icon.png" type="image/x-icon">
+    <!-- Box icons-->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <title>MovieSmart</title>
+</head>
+
+<body>
+    <!--Header-->
+    <header>
+        <!-- nav-->
+        <div class="nav container">
+            <!--Logo-->
+            <a href="./index.html" class="logo">Movie<span>Smart</span></a>
+            <!--Searc box-->
+            <!--NAV BAR-->
+        </div>
+    </header>
+
+    
+    <form class="formulario-contacto" id="formulario-contacto" onsubmit="myFunction3()">
+        <h4>Formulario de Contacto</h4>
+        <div class="div-form">
+            <p>Nombre</p>
+            <input type="text" class="input-text" required>
+        </div>
+        <div class="div-form">
+            <p>Correo electronico</p>
+            <input type="text" class="input-text" required>
+        </div>
+        <div class="div-form">
+            <p>Motivo contacto</p>
+            <select required>
+                <option disabled selected value>Elija un motivo</option>
+                <option value="opcion1">Facturación</option>
+                <option value="opcion2">Depto. Tecnico</option>
+                <option value="opcion3">Información General</option>
+            </select>
+        </div>
+        <div class="div-form" >
+            <p>Que le gustaria que mejoremos ?</p>
+            <label class="input-label"><input type="checkbox" class="input-check">Catálogo</label>
+            <label class="input-label"><input type="checkbox" class="input-check">Configuración de Cuenta</label>
+            <label class="input-label"><input type="checkbox" class="input-check">Métodos de Pago</label>
+            <label class="input-label"><input type="checkbox" class="input-check">Suscripción</label>
+            <label class="input-label"><input type="checkbox" class="input-check">Idiomas</label>
+        </div>
+        <div class="div-form">
+            <p>Recomendaria la plataforma ?</p>
+            <label class="input-label"><input type="radio" class="input-radio" name="recomendacion" value="Si"  checked>Si</label>
+            <label class="input-label"><input type="radio" class="input-radio" name="recomendacion" value="No">No</label>
+            <label class="input-label"><input type="radio" class="input-radio" name="recomendacion" value="Tal Vez">Tal Vez</label>
+        </div>
+        <div class="div-form">
+            <p>Algun comentario o sugerencia ?</p>
+            <textarea class="input-textarea" id="comentarios" name="comentario" placeholder="Ingrese su comentario aqui ..."></textarea>
+        </div>
+        <div class="div-form">
+            <input class="submit-button" type="submit" id="submit" value="Submit">
+        </div>
+
+    </form>
+
+
+    <script>
+    function myFunction3(){
+            Swal.fire(
+            'Enviado!',
+            'El formulario fue enviado correctamente.',
+            'success');
+        }
+    </script>
+
+    <!--JS Swiper JS-->
+    <script src="swiper-bundle.min.js"></script>
+    <!--JS-->
+    <script src="main.js"></script>
+</body>
+
+</html>

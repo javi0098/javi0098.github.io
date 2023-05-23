@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Css -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="sweetalert2.all.min.js"></script>
+    <!-- Fontawesome-->
+    <script src="https://kit.fontawesome.com/6e4ee48236.js" crossorigin="anonymous"></script>
+    <!-- jquery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <!--js-->
+    <script src="Login-form.js"></script>
+    <!--link Swiper CSS-->
+    <link rel="stylesheet" href="swiper-bundle.min.css">
+    <link rel="stylesheet" href="style.css">
+    <!-- Fav icon-->
+    <link rel="shortcut icon" href="Movies Website Images And Video/img/fav-icon.png" type="image/x-icon">
+    <!-- Box icons-->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <title>MovieSmart</title>
+</head>
+
+<body>
+    <!--Header-->
+    <header>
+        <!-- nav-->
+        <div class="nav container">
+            <!--Logo-->
+            <a href="../index.html" class="logo">Movie<span>Smart</span></a>
+            <!--Searc box-->
+            <!--NAV BAR-->
+        </div>
+    </header>
+
+    
+    <form class="formulario-login" id="formulario-login" onsubmit="myFunction1()">
+        <h4>Inicio de Sesión<i class="fa-solid fa-arrow-right-to-bracket"></i></h4> 
+        <p class="parrafo-input">Ingrese su Correo</p>
+        <input class="form-input" type="email" id="email" name="email" placeholder="Ingrese su email" required>
+        <p class="parrafo-input">Ingrese su Contraseña</p>
+        <input class="form-input" type="password" id="password" name="password" placeholder="Alfanumerico 8 digitos" pattern="[a-z0-9]{8,}" required>
+        <input class="submit-button" type="submit" id="submit" value="Login" >
+        <!--Podria generar una ventana popup para enviar la pass a un email-->
+        <p><a href="#">¿Has olvidado tu contraseña?</a> &nbsp;&nbsp;&nbsp;&nbsp; <a href="../CuentaNueva/cuentaNueva.html">Crear una Cuenta</a></p>
+    </form>
+    
+    <script>
+        function myFunction1(){
+                Swal.fire(
+                'Bienvenido!',
+                'Has iniciado sesion correctamente',
+                'success')
+        }
+    </script>
+    
+     <!-- js de formulario-->
+    <script src="loginForm.js"></script>
+
+</body>
+
+ </html>
